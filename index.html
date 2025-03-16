@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Asteroid Tracker</title>
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4">Near-Earth Asteroid Tracker</h1>
+    <div class="flex items-center gap-4 mb-6">
+      <label for="date" class="text-lg font-medium">Select Date:</label>
+      <input type="date" id="date-picker" class="bg-gray-800 text-white p-2 rounded-md">
+      <button id="fetch-button" class="bg-blue-500 px-4 py-2 rounded-md text-white hover:bg-blue-600">Fetch Data</button>
+    </div>
+    <div id="asteroid-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
