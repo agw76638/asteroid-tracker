@@ -19,8 +19,7 @@ async function fetchAsteroids(date) {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-    displayAsteroids(data.near_earth_objects[getTodayDate()]);
-    console.log(data.near_earth_objects[getTodayDate()]);
+    displayAsteroids(data.near_earth_objects[date]);
   } catch (error) {
     console.error("Error fetching asteroid data:", error);
   }
